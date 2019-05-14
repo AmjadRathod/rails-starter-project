@@ -1,13 +1,20 @@
 development:
   adapter: postgresql
-  database: starter_project_dev
+  database: expert_advice
   host: localhost
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 test:
   adapter: postgresql
-  database: starter_project_test
+  database: expert_advice
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
   min_messages: WARNING
+
+production:
+  adapter: postgresql
+  database: dbhqh62uvp9eql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: ec2-107-22-238-217.compute-1.amazonaws.com
+  min_messages: 5000
