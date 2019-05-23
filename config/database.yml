@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: dbhqh62uvp9eql
+  database: expert_advi_production
   username: aspgwmqaksebpo
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
   url: <%= ENV["SOME_OTHER_URL"] %>
